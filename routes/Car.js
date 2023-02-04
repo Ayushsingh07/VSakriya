@@ -48,7 +48,7 @@ router.get("/getcar", async (req, res) => {
   }
 });
 //getallcar
-router.get("/getcars", async (req, res) => {
+router.post("/getcars", async (req, res) => {
   const filter = { police_station: req.body.police_station_id };
   const cursor = await car_details.find(filter, { "missing_details": 1 });
   
