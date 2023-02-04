@@ -6,7 +6,9 @@ const mongoose = require("mongoose");
 const userroute = require("./routes/auth");
 const policeroute = require("./routes/Police");
 const carroute = require("./routes/Car");
+const cors=require('cors')
 
+app.use(cors()) 
 // configurations
 app.use(express.json());
 dotenv.config();

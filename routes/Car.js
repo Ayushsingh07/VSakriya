@@ -112,6 +112,7 @@ router.delete("/delete/:id", async (req, res) => {
         phone: car.owner.phone,
       },
       missing_details: {
+        car_number_:car.missing_details.car_number_ ||'',
         place: car.missing_details.place || '',
         police_station: car.missing_details.police_station ||'',
         time: car.missing_details.time,
