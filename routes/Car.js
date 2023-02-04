@@ -1,7 +1,18 @@
 const router = require("express").Router();
 const { Timestamp } = require("mongodb");
 const car_details = require("../modules/car_details");
+const dotenv=require("dotenv")
 const recoverd_car=require('../modules/recoverd_car')
+dotenv.config()
+
+
+
+require('dotenv').config();
+
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+
 
 router.post("/save_Car", async (req, res) => {
     
@@ -60,32 +71,53 @@ router.post("/getcars", async (req, res) => {
   });
 
 //update
-router.put("/:id", async (req, res) => {
-  try {
-    const car = await car_details.findById(req.params.id);
-    if (!car) {
-      return res.status(404).send({ success: false, msg: "Car not found" });
-    }
 
-    let risk = "";
-    if (car.risk === "low") {
-      risk = "moderate";
-    } else if (car.risk === "moderate") {
-      risk = "high";
-    }
 
-    try {
-      const update = await car_details.updateOne(
-        { _id: req.params.id },
-        { $set: { risk: risk } }
-      );
-      res.status(200).send({ success: true, msg: "Risk updated" });
-    } catch (err) {
-      res.status(500).send({ success: false, msg: err });
-    }
-  } catch (err) {
-    res.status(500).send({ success: false, msg: err });
+
+
+router.post("/found_car", async (req, res) => {
+  const filter = { car_number: req.body.car_number };
+  const cursor = await user_data.findOne(filter);
+  if (!cursor) {
+    return res.status(404).send({
+      success: false,
+      message: "Car not found",
+    });
   }
+
+
+const userToken = cursor.user_token;
+const notification = {
+    title: "Your car has been found!",
+    body: "We have found your missing car. Please contact the police station for more information.",
+  };
+  var admin = require("firebase-admin");
+var serviceAccount = require("../service.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://smart-interceptor-d670e-default-rtdb.firebaseio.com/"
+});
+
+var topic = 'general';
+
+var message = {
+  notification: {
+    title: 'Your car has been found!',
+    body: 'We have found your missing car. Please contact the police station for more information.'
+  },
+  topic: topic
+};
+
+// Send a message to devices subscribed to the provided topic.
+admin.messaging().send(message)
+  .then((response) => {
+    // Response is a message ID string.
+    console.log('Successfully sent message:', response);
+  })
+  .catch((error) => {
+    console.log('Error sending message:', error);
+});
 });
 
 
