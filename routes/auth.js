@@ -1,20 +1,19 @@
 const router = require("express").Router();
 const User = require("../modules/user");
 const CryptoJS = require("crypto-js");
-const dotenv = require("dotenv");
-dotenv.config();
 
 
 
 
+require('dotenv').config();
 
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 
 
 //otp
 const twilio = require("twilio");
-const accountSid = "AC42adc57b1e7641bfa5209041f877ce96";
-const authToken = "0da405f27687c49d996e64b077d4d95d";
 const client = new twilio(accountSid, authToken);
 
 
