@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "smart-interceptor-d670e",
+    "private_key_id": "236a1c7ebc1748ce8c8a38aa0d6cc9cf40041278",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDJwd5QFd3zUFcU\n2e6bXaI8aBQxDsTPi+3IdwAkh1B8G2wilux/gNPYVXvXKrzdzMqj3KjKoM+OKFZ4\n0L7OHNOQrqzfyootAzHxh3XQkOewU4Gs0EVqH7R5brR/xmo160HOZGMBeGGcrkA4\nOfL8W9zi+C57S333E3PnV+Zc1FW/i16zqiH0nMtx/oJCWLibEV6zLV96oTYhk4ls\nBXsoQfb6cHu7L/dpOYUch74S/srAkuhL3M4kjjanLO6gQ5LS6kdPtrjjmiwsRFvP\nGsHEp9I3p+VJQjjdM8MSKGieSYQhwEnsDIFKYOZnosUKbpL8hhL8Wdj9lwIhT4fL\ngVg3zEs/AgMBAAECggEABoi/VPOoWQl4kIXQWvrI1tD+GmqiiCA9hrkH6abyPdq7\ngVFG/ogjFEYMeTb6n+pSg8UROGLF5hI7XrVQAKfhWDW4BpVuLTAFzY84CxWuU0EZ\nGYozPVEijK4/rUW1SeLBIliQ9kq6SpNAJDIIQxEMkdM82iRjQ32/SrZHkSkVT9s6\nYcOObg9lLK35korHOnBW5GJfLWtWJQGdJ5HSe1twoWH6UMUAlKOdIECX8gtrJZDF\nKZBvmjgaCHT7NSAiDLEiV0ZVbX/jKumFDjBHDa382Xix36DnJom7B4NmEvfD8Tf3\nFh/8aN9t0EU3pGv5fVSXzYy1PH4yQMZfIHYsu7gBBQKBgQD4k/ORPOQzKDmB5sms\nGxCiDBFZZ0cGh/aFgRkZWH0DbWFCg9+2eYMIeliE08i5ZiJCqk94Qtl3ttZVsupl\nMtn5w31fNmSICZu0BYvDeDnkzB0+MK/7RDwD70s6Jjj0fY09R7jzXFAiJbf/VCjs\nqnNSclEMZSycLQGsy9/DuseNtQKBgQDPyAkKdj/kzsl+dLl4yKnqlEMYQMLesCL/\nEi9/KLsAmTpwbT/O4VYlU4TGOeuv5nssUJv4RIX6ZMmzwCNNurJm8ppbzrOpOaxW\nh5qK/4izK09j76Z4SFpHZh03WaEgQfjBuw2YUdTcLM5g7Gm5OFAB1Wp1+Kwppsuq\niE8eLittowKBgGMpomCuCdrekRJhHtKpeVkrt0ATEyJn2tAnT/vscPKND9+Y/AWv\nM7aOGAHk+o37UG+HwWwYPuii554IYbk9L/eTJNB2wmQCcTq/e6HetDmxs3i7s3hp\nIAfxzfDEjrP54f4wPnfWu6DjqyMQT8MZvCeHsw1ezwz+Z0ynh/xs5m6BAoGAUfmZ\nl4cPrjXnSPzEL+L7JpFX5zmlqDXVmMyT8JchMBtD8xcnFXfRhOhuecZgNgW4ksM6\nxbhDI4agDUrAouoFeJg+Tfo+54TZeUoGrtAiHo33xHXIN6xT8ddXr36tEwz0F3q0\n4mNml3cV9SdQjsKozhBk8CYrxkMIFz+v9zg/6gECgYEAhvU3D9cPzUp7uuqsAjjG\nFFFbDZRJCY45OwC4fTiOGALSse6pjYIB/xrqfD3B+D4S247k9NkEP9XZswNJfono\nDxpRBN6cQ4RgRYMRxywnWvAK3fVSSgMImQntxPllwnq6MzO0qee2xq+1qADM4540\naue6JDxVQ65ZUBUyNH4rV38=\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-gv3cn@smart-interceptor-d670e.iam.gserviceaccount.com",
+    "client_id": "108028985452263255974",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gv3cn%40smart-interceptor-d670e.iam.gserviceaccount.com"
+  }
+
